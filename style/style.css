@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* paleta de colores segun Material desing
+color principal celeste: #48bbed
+color complementario naranja: #ed7a48
+link de la seleccion https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=48bced&secondary.color=ed7a48
+*/
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+#logo{
+    height: 100px;
+    width: 200px;
+}
+
+/* main */
+.seccion1{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: stretch;
+    align-items: stretch;
+
+}
+.titulo{
+    display: grid;
+    grid-template-rows: 100px 50px 300px;
+    justify-content: flex-start;
+}
+
+.titulo h1{
+    font-size: 500%;
+   margin-left: 5%;
+}
+.titulo p{
+    font-size: 25px;
+    margin-left: 10%;
+}
+.seccion1 .titulo a{
+    display: grid;
+}
+.flecha{
+    width: 25px;
+    height: 55px;
+    margin-left: 7%;
+    align-self: flex-end;
+
+}
+
+.nosotros{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    justify-content: center;
+    margin:auto;
+    height: 700px;
+}
+.nosotros p{
+    text-align: center;
+    font-size: 20px;
+}
+.nosotros a{
+    padding: 200px 0px 20px;
+    text-transform: none;
+    font-weight:bold;
+    text-align: center;
+    font-size: 30px;
+}
+footer{
+    margin-top:100px;
+    background-color: #1f5064;
+    min-height: 70px;
+}
+.pie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+    min-height: 70px;
+}
+.center{
+
+    justify-self: center;
+}
+
+/* cerramos section principal */
+
+/* mobile first */
+@media(min-width:769px){
+    body{
+        background-color: #ffffff;
+    }
+
+}
+/* tablet */
+@media (max-width:768px) and (min-width:321px) {
+    body{
+        background-color:white;
+    }
+    .flecha{
+        display: none;
+    }
+    .seccion1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .titulo{
+        display: none;
+    }
+    footer{
+        margin-top: 200px;
+    }
+
+}
+/* moviles */
+@media (max-width:320px){
+    body{
+        background-color: #ffffff;
+    }
+    .flecha{
+        display: none;
+    }
+   
+    .seccion1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .titulo{
+        display: none;
+    }
+    #logo{
+        justify-self: center;
+        align-self: center;
+    }
+    #logo{
+        height: 70px;
+        width: 90px;
+    }
+    footer{
+        margin-top: 200px;
+    }
+    .pie{
+        justify-content: space-around;
+        align-content: center;
+    }
+    .nosotros a{
+        padding: 50px 0px 20px;
+        text-transform: none;
+        font-weight:bold;
+        text-align: center;
+        font-size: 25px;
+    }
+
+}
+/* Bootstrap */
+.gradiente{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    align-content: stretch;
+    min-height: 400px;
+    background-image: linear-gradient(to bottom, #48bbed, white);
+}
+.caja1{
+    display: flex;
+    background-color: #d35921;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    color: #ffffff;
+    font-size: 20px;
+}
+.caja1:hover{
+    transform: scale(2,2);
+    background-color: #ed7a48;
+}
+.caja2{
+    display: flex;
+    background-color: #d35921;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    color: #ffffff;
+    font-size: 20px;
+}
+.caja2 p{
+    padding: 10%;
+    align-self: center;
+}
+
+.caja2:hover{
+    transform:rotate(-20deg);
+}
+.caja2:hover p{
+    transform:rotate(20deg);
+}
+.caja3{
+    display: flex;
+    align-items: center;
+    background-color: #d35921;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+
+}
+.caja3:hover{
+    transform: translate(20px,30px);
+}
+
+/* -----bootstrap----- */
+nav{
+    background-color: #48bbed;
+ }
+.logoDimension{
+    height: 100px;
+    width: 200px;
+}
+.menu2 li a{
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:normal;
+    min-width: 150px;
+    transition: background-color,0.5s;
+ 
+}
+.menu2 li:hover a{
+    background-color: #ed7a48;
+
+}
+.menu2 li a:hover{
+    background-color: #ed7a48;
+}
+ .subMenu2{
+    background-color: #ed7a48;
+}
+.subMenu2 li{
+    background-color: #ed7a48;
+}
+.subMenu2 li a{
+    background-color: #ed7a48;
+    color: rgb(22, 22, 22);
+    font-size: 20px;
+    font-weight:normal;
+}
+.subMenu2 li:hover a{
+    background-color: #eb6529;
+}
+.derecha{
+    justify-content: flex-end;
+    align-content: center;
+}
+.formulario{
+    margin:auto ;
+    width: 1000px;
+    height: 300px;
+
+}

@@ -1,0 +1,13 @@
+@import 'variables.scss';
+.presentacion{
+    display: grid;
+    grid-template-columns:0.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin: auto;
+    }
+    div p{
+        font-size: 20px
+    }
+}

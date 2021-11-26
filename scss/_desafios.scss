@@ -1,0 +1,110 @@
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    justify-content: stretch;
+    align-content: center;
+    min-height: 500px;
+    background-image: linear-gradient(to bottom, #48bbed, white);
+    article{
+            display: grid;
+            grid-template-columns: 3fr 1 fr;
+            height: 200px;
+            width: 150px;
+            margin: auto;
+            background-color: $colorBlanco;
+            border-radius: 20px;
+                div{
+                    min-height: 100px;
+                    min-width: 100px;
+                    margin:3px;
+                    border-radius: 20px;
+                    background-image: url(../img/vaca.jpg);
+                }
+                p{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+        }
+    }
+
+   .novedades{
+       display: grid;
+       grid-template-columns: 2fr;
+       background-color: $colorSecundario;
+       overflow:auto;
+       max-height: 500px;
+       border-radius: 10px;
+
+            h2{
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            div{
+                margin: 15px;
+                background-color: $colorBlanco;
+                height: 1fr;
+                width: 0.5fr;
+                    p{
+                        font-size: 22px;
+                    }
+            }
+   }
+
+.redesSociales{
+        margin: 50px 0px 50px 0px;
+            h3{
+                margin: 10px;
+                text-align: center;
+                text-transform:uppercase ;
+            }
+
+        .redesSociales__logos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+                a{
+                    margin:auto;
+                }
+        }
+}
+
+// desafio complementario
+// operaciones
+.marginAuto{
+    margin:auto;
+}
+.cajas__prueba1{
+    background-color: $colorFooter;
+    width: $medidaCaja;
+    height: 100px;
+}
+.cajas__prueba2{
+    background-color: $colorPrincipal;
+    width:$medidaCaja /2 ;
+    height: 100px;
+}
+.cajas__prueba3{
+   background-color:  $colorSecundario;
+    width: $medidaCaja - 100px;
+    height: 100px;
+}
+
+// bucle
+@for $i from 1 through 3{
+    .cajasBucle__prueba#{$i} {height: 100px; width:$medidaCaja * ($i/2) ;}
+}
+@for $i from 1 through 3{
+    .cajasBucle__prueba#{$i} {background-color:$colorMenuHover;}
+
+}
+@for $v from 1 through 3{
+    .cajasBucle__prueba#{$v} {font-size: 20px *($v/2);}
+}
+// each
+@each $color in Red,Cyan,Yellow{
+    .color#{$color}{
+        background-color:#{$color} ;
+    }
+
+}

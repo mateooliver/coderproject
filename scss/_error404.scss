@@ -1,0 +1,34 @@
+@import 'variables.scss';
+
+.background__error{
+    background-color: $colorPrincipal;
+    section{
+        display: grid;
+        grid-template-rows:2fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        a img{
+            width: 300px;
+            height: 220px;
+        }
+        h1{
+            color:$colorBlanco;
+        }
+        p{
+            color:$colorBlanco;
+        }
+        a button{
+            border-radius: 20px;
+            border: none;
+            width: 200px;
+            height: 80px;
+            background-color: $colorFooter;
+            font-size: 2rem;
+            color: $colorBlanco;
+        }
+
+    }
+}
+.textAling{
+    text-align: center;
+}
