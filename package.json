@@ -267,5 +267,13 @@
     "yargs": "^13.3.2",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateooliver/coderproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mateooliver/coderproject/issues"
+  },
+  "homepage": "https://github.com/mateooliver/coderproject#readme",
   "description": ""
 }
