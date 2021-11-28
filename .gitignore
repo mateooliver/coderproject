@@ -1,4 +1,4 @@
 package-lock.json
 node_modules
-root/pages/desafios.html
-root/scss/_desafios.scss
+pages/desafios.html
+scss/_desafios.scss
