@@ -116,10 +116,23 @@
   grid-template-columns: 0.5fr 1fr;
   justify-content: center;
   align-items: center; }
-  .presentacion img {
+  .presentacion .imagen {
+    max-width: 100%;
+    height: auto;
     margin: auto; }
   .presentacion div p {
     font-size: 20px; }
+
+@media (max-width: 320px) {
+  .presentacion {
+    margin-bottom: 200px;
+    display: inline; }
+    .presentacion .imagen {
+      max-width: 80%;
+      height: auto;
+      margin: 35px; }
+    .presentacion div {
+      text-align: center; } }
 
 .background__error {
   background-color: #48bbed; }
@@ -243,6 +256,7 @@ nav {
 
 .menu2 li a {
   text-decoration: none;
+  text-align: center;
   color: #161616;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;

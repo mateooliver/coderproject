@@ -4,10 +4,28 @@
     grid-template-columns:0.5fr 1fr;
     justify-content: center;
     align-items: center;
-    img{
+    .imagen{
+        max-width: 100%;
+        height: auto;
         margin: auto;
     }
     div p{
         font-size: 20px
+    }
+}
+// media jqueries mobile
+
+@media (max-width:320px){
+    .presentacion{
+        margin-bottom: 200px;
+    display:inline;
+    .imagen{
+        max-width: 80%;
+        height: auto;
+        margin: 35px;
+    }
+        div{
+            text-align: center;
+        }
     }
 }
