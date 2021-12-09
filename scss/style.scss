@@ -214,7 +214,13 @@ nav {
    /* web */
   @media (min-width: 769px) {
     body {
-      background-color: $colorBlanco; } }
+      background-color: $colorBlanco; } 
+    .maps{
+        width: 400px;
+        height:300px;
+    }
+    
+    }
   
   /* tablet */
   @media (max-width: 768px) and (min-width: 321px) {
@@ -231,6 +237,10 @@ nav {
 .seccion1__titulo {
       display: none;
      }
+.container__contacto{
+    margin:auto;
+    max-width: 50%;
+}
 footer {
       margin-top: 200px; } 
     }
@@ -258,6 +268,16 @@ footer {
       height: 70px;
       width: 90px; 
     }
+.container__contacto{
+    display: block;
+    padding: 10%;
+    margin: auto;
+    max-width: 250px;
+}
+.maps{
+    max-height: 150px;
+    max-width: 200px;
+}
 footer {
       margin-top: 200px; 
     }
