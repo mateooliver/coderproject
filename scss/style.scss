@@ -1,24 +1,14 @@
 @import 'variables.scss';
-@import 'desafios.scss';
-@import 'profesionales.scss';
-@import 'error404.scss';
 
+/*Restart*/
 * {
     margin: 0;
     padding: 0; }
   
-  /* paleta de colores segun Material desing
-    color principal celeste: #48bbed
-    color complementario naranja: #ed7a48
-    link de la seleccion https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=48bced&secondary.color=ed7a48
-    */
   html {
-    font-family: 'Montserrat', sans-serif; }
-  
-  #logo {
-    height: 100px;
-    width: 200px; }
-  
+    font-family: 'Montserrat', sans-serif;
+ }
+/*   index*/
   /* main */
 .seccion1 {
     display: grid;
@@ -51,7 +41,7 @@
 
 .seccion2__nosotros{
     text-align: center;
-    padding:100px 0px 100px 0px ;
+    padding:100px 0px 30px 0px ;
 }
   
 .seccion2__nosotros--p{
@@ -69,21 +59,76 @@
 .seccion2__nosotros--a:hover{
     color: black;
 }     
+/*Flecha baja*/
+.flechaDown{
+    margin: auto;
+    img{
+        height: 80%;
+        width: 80%;
+        opacity:30% ;
+    }
+}
+/* tarjetas de index con informacion*/
+.container{
+    overflow:auto;
+}
+.hacemos{
+    padding: 6% 0% 3% 0%;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.tarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        
+        
+        div{
+            justify-self:center ;
+            text-align: center;
+
+        }
+    }
+    
+
+
+/* FOOTER*/
 footer{
     background-color:$colorFooter;
-    height: 50px;
+    margin-top: 80px;
+    min-height: 50px;
 }
 .footerGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .footer__info {
-    margin:5px 0px 5px 0px;
+    padding-top: 0.7%;
+    margin: auto;
+}
+.footer__info--term{
+    font-size: 1vw;
+}
+.footer__searchbox{
+    border-radius: 10px;
+    border: none;
+    opacity: 85%;
+    background-color:$colorSearchbox ;
  }
-
+ .footer__searchbox::placeholder{
+     color: $colorBlanco;
+ }
 .footer__info--center{
     text-align: center;}
+.footer__rrss{
+    display: block;
+}
+.footer__rrss--logo{
+    max-height: 25px ;
+}
 
+/* Background de web*/
 .gradiente {
     display: grid;
     grid-template-columns: 1fr;
@@ -94,6 +139,11 @@ footer{
 }
   
   /* -----bootstrap----- */
+/*carousel*/
+.borderRadius{
+    border-radius: 10px;
+}
+/* Menu, estilos*/
 nav {
     background-color: #48bbed; }
     
@@ -116,37 +166,52 @@ nav {
   
 .menu2 li a:hover {
     background-color:  $colorSecundario; }
-  
-.subMenu2 {
-    background-color: $colorSecundario; }
-  
-.subMenu2 li {
-    background-color: $colorSecundario; }
-  
-.subMenu2 li a {
-    background-color: $colorSecundario;
-    color: #161616;
-    font-size: 20px;
-    font-weight: normal; }
-  
-.subMenu2 li:hover a {
-    background-color:$colorMenuHover; }
-  
+
 .derecha {
     justify-content: flex-end;
     align-content: center; }
-  
+
+/*Page profesionales*/
+
+@import 'profesionales.scss';
+
+/* Page contactos*/
 .formulario {
     margin: auto;
     width: 1000px;
     height: 300px; }
+
 .directorio{
     background-image:linear-gradient(to right, white, $colorPrincipal);
     width: 50%;
 }
-
+.boton:hover{
+    background-color: $colorSecundario;
+    border:none;
+}
+/*maps de contacto*/
+.encuentranos{
+    margin-top: 80px;
+    text-align: center;
+    display: grid;
+    grid-template-columns:1fr 1fr;
     
-  /* mobile first */
+
+    div{
+        align-self: center;
+        justify-self: flex-end;
+        font-size: medium;
+        margin-right: 30px;
+    }
+    iframe{ justify-self: flex-start;
+    }
+}
+/* estilos de error404*/
+@import 'error404.scss';
+    
+/* Responsive */
+/* mobile first */
+   /* web */
   @media (min-width: 769px) {
     body {
       background-color: $colorBlanco; } }

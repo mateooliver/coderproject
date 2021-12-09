@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Agroliver somos una empresa dedicada a negocios agricolas. cria de cerdo, bovinos y cultivos">
     <meta name="keywords" content="agroliver, agro, agronomo, campo, Ingeniero, cultivos, ganado, cerdos">
-    <title>Inicio</title>
+    <title>Agroliver | Inicio</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,10 +41,10 @@
                 <div class="seccion1__titulo">
                     <h1 class="seccion1__titulo seccion1__titulo--h1 animate__animated animate__bounceInDown">Agroliver</h1>
                     <p class="seccion1__titulo seccion1__titulo--p animate__animated animate__bounceInDown">Bienvenido a nuestra web</p>
-                    <a class="seccion1__titulo--a" href="#about"><img class="seccion1__titulo seccion1__titulo--flecha" src="./img/flecha.png" alt="flecha" ></a>
+                    <a class="seccion1__titulo--a" href="#about"><img class="seccion1__titulo seccion1__titulo--flecha " src="./img/flecha.png" alt="flecha" ></a>
                 </div>
-                <div class="animate__animated animate__fadeIn fotoPrincipal container-fluid">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="animate__animated animate__fadeIn fotoPrincipal container-fluid ">
+                    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -52,21 +52,21 @@
                         </div>
                         <div class="carousel-inner">
                           <div class="carousel-item active ">
-                            <img src="./img/gestion.png" class=" d-block w-100" alt="Gestión">
+                            <img src="./img/gestion.png" class="borderRadius d-block w-100" alt="Gestión">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Gestión</h5>
                               <p>Pensando en la sustentabilidad y rentabilidad de la empresa</p>
                             </div>
                           </div>
                           <div class="carousel-item">
-                            <img src="./img/soja.png" class="d-block w-100" alt="soja">
+                            <img src="./img/soja.png" class="borderRadius d-block w-100" alt="soja">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Cultivos</h5>
                               <p>Cultivamos superficies propias y arrendadas</p>
                             </div>
                           </div>
                           <div class="carousel-item">
-                            <img src="./img/vaca.png" class="d-block w-100" alt="vaca">
+                            <img src="./img/vaca.png" class="borderRadius d-block w-100" alt="vaca">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Cría animal</h5>
                               <p>Granja de cría porcina y feed-lot de bovinos</p>
@@ -91,12 +91,45 @@
               <p class="seccion2__nosotros seccion2__nosotros--p"> Somos una empresa Deroense dedicada a la actividad rural. Comenzamos en el 2011 como una granja de cria porcina con un total de 30 madres. Actualmente nuestra granja porcina cuenta con 300 madre y nos encontramos trabajando con la cria Bovina bajo la metodología de feed-lot. Cultivamos una gran parte de los cereales que se necesitan para la alimentación de los animales, dandole valor agregado a la actividad agrícola. Empleamos de forma directa 6 personas en la granja porcina y 1 persona en el feed-lot. Es administrado por Mateo, quien se sumo a la empresa luego de recibirse de Ingeniero Agrónomo en la Universidad de La Plata.</p>
             </div>
         </section>
+        <section class="flechaDown animate__animated animate__fadeOutDown animate__infinite animate__slower">
+          <img  src="./img/flechaDown.png" alt="flecha down">
+        </section>
+        <section class="container">
+          <p class="text-center hacemos">¿Qué hacemos?</p>
+          <div class="tarjetas">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/card__cerdos.png" class="borderRadius card-img-top" alt="cerdos">
+              <div class="card-body">
+                <h4>Cria Porcina</h4>
+                <p class="card-text">Granja de cría porcina de 300 madres</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="./img/card__cultivos.png" class="borderRadius card-img-top" alt="Cultivos">
+              <div class="card-body">
+                <h4>Cultivos</h4>
+                <p class="card-text">Cultivamos nuestras propia superficie con el objetivo de alimentar a nuestros animales</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="./img/card__vacas.png" class="borderRadius card-img-top" alt="vacas">
+              <div class="card-body">
+                <h4>Cria Bovina</h4>
+                <p class="card-text">Cria de ganado Bovino a feddlot</p>
+              </div>
+            </div>
+        </div>
+        </section>
     </main>
     <footer>
         <div class="footer__info footerGrid container-fluid">
-            <p role="terminos" class="footer__info footer__info--center">todos los derechos reservados</p>
-            <input role="searchbox" class="footer__info footer__info--center" type="search"  placeholder="Buscar en el sitio">
-            <p role="redesSociales" class="footer__info footer__info--center">Buscanos en las redes sociales</p>
+            <a role="terminos" href="./pages/termycond.html" class="footer__info footer__info--center footer__info--term"> Todos los derechos reservados</a>
+            <input role="searchbox" class="container-sm footer__info footer__info--center footer__searchbox" type="search"  placeholder="Buscar en el sitio">
+            <div role="redesSociales" class="footer__info footer__info--center footer__rrss">
+              <a href="www.facebook.com"><img class="footer__rrss--logo" src="./img/facebook.png" alt="Facebook"></a>
+              <a href="www.twitter.com"><img class="footer__rrss--logo" src="./img/twitter.png" alt="twitter"></a>
+              <a href="www.instagram.com"><img class="footer__rrss--logo" src="./img/instagram.png" alt="Instagram"></a>
+            </div>
         </div>
     </footer>
     <script src="./css/bootstrap.min.js"></script>

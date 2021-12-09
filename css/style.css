@@ -1,181 +1,12 @@
-.seccion {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
-  justify-content: stretch;
-  align-content: center;
-  min-height: 500px;
-  background-image: linear-gradient(to bottom, #48bbed, white); }
-  .seccion article {
-    display: grid;
-    grid-template-columns: 3fr 1 fr;
-    height: 200px;
-    width: 150px;
-    margin: auto;
-    background-color: #ffffff;
-    border-radius: 20px; }
-    .seccion article div {
-      min-height: 100px;
-      min-width: 100px;
-      margin: 3px;
-      border-radius: 20px;
-      background-image: url(../img/vaca.jpg); }
-    .seccion article p {
-      font-size: 20px;
-      text-transform: uppercase;
-      text-align: center; }
-
-.novedades {
-  display: grid;
-  grid-template-columns: 2fr;
-  background-color: #ed7a48;
-  overflow: auto;
-  max-height: 500px;
-  border-radius: 10px; }
-  .novedades h2 {
-    text-align: center;
-    text-transform: uppercase; }
-  .novedades div {
-    margin: 15px;
-    background-color: #ffffff;
-    height: 1fr;
-    width: 0.5fr; }
-    .novedades div p {
-      font-size: 22px; }
-
-.redesSociales {
-  margin: 50px 0px 50px 0px; }
-  .redesSociales h3 {
-    margin: 10px;
-    text-align: center;
-    text-transform: uppercase; }
-  .redesSociales .redesSociales__logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
-    .redesSociales .redesSociales__logos a {
-      margin: auto; }
-
-.marginAuto {
-  margin: auto; }
-
-.cajas__prueba1 {
-  background-color: #1f5064;
-  width: 720px;
-  height: 100px; }
-
-.cajas__prueba2 {
-  background-color: #48bbed;
-  width: 360px;
-  height: 100px; }
-
-.cajas__prueba3 {
-  background-color: #ed7a48;
-  width: 620px;
-  height: 100px; }
-
-.cajasBucle__prueba1 {
-  height: 100px;
-  width: 360px; }
-
-.cajasBucle__prueba2 {
-  height: 100px;
-  width: 720px; }
-
-.cajasBucle__prueba3 {
-  height: 100px;
-  width: 1080px; }
-
-.cajasBucle__prueba1 {
-  background-color: #eb6529; }
-
-.cajasBucle__prueba2 {
-  background-color: #eb6529; }
-
-.cajasBucle__prueba3 {
-  background-color: #eb6529; }
-
-.cajasBucle__prueba1 {
-  font-size: 10px; }
-
-.cajasBucle__prueba2 {
-  font-size: 20px; }
-
-.cajasBucle__prueba3 {
-  font-size: 30px; }
-
-.colorRed {
-  background-color: Red; }
-
-.colorCyan {
-  background-color: Cyan; }
-
-.colorYellow {
-  background-color: Yellow; }
-
-.presentacion {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  justify-content: center;
-  align-items: center; }
-  .presentacion .imagen {
-    max-width: 100%;
-    height: auto;
-    margin: auto; }
-  .presentacion div p {
-    font-size: 20px; }
-
-@media (max-width: 320px) {
-  .presentacion {
-    margin-bottom: 200px;
-    display: inline; }
-    .presentacion .imagen {
-      max-width: 80%;
-      height: auto;
-      margin: 35px; }
-    .presentacion div {
-      text-align: center; } }
-
-.background__error {
-  background-color: #48bbed; }
-  .background__error section {
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center; }
-    .background__error section a img {
-      width: 300px;
-      height: 220px; }
-    .background__error section h1 {
-      color: #ffffff; }
-    .background__error section p {
-      color: #ffffff; }
-    .background__error section a button {
-      border-radius: 20px;
-      border: none;
-      width: 200px;
-      height: 80px;
-      background-color: #1f5064;
-      font-size: 2rem;
-      color: #ffffff; }
-
-.textAling {
-  text-align: center; }
-
+/*Restart*/
 * {
   margin: 0;
   padding: 0; }
 
-/* paleta de colores segun Material desing
-    color principal celeste: #48bbed
-    color complementario naranja: #ed7a48
-    link de la seleccion https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=48bced&secondary.color=ed7a48
-    */
 html {
   font-family: 'Montserrat', sans-serif; }
 
-#logo {
-  height: 100px;
-  width: 200px; }
-
+/*   index*/
 /* main */
 .seccion1 {
   display: grid;
@@ -207,7 +38,7 @@ html {
 
 .seccion2__nosotros {
   text-align: center;
-  padding: 100px 0px 100px 0px; }
+  padding: 100px 0px 30px 0px; }
 
 .seccion2__nosotros--p {
   text-align: center;
@@ -224,20 +55,68 @@ html {
 .seccion2__nosotros--a:hover {
   color: black; }
 
+/*Flecha baja*/
+.flechaDown {
+  margin: auto; }
+  .flechaDown img {
+    height: 80%;
+    width: 80%;
+    opacity: 30%; }
+
+/* tarjetas de index con informacion*/
+.container {
+  overflow: auto; }
+
+.hacemos {
+  padding: 6% 0% 3% 0%;
+  color: black;
+  font-weight: bold;
+  font-size: 30px; }
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly; }
+  .tarjetas div {
+    justify-self: center;
+    text-align: center; }
+
+/* FOOTER*/
 footer {
   background-color: #1f5064;
-  height: 50px; }
+  margin-top: 80px;
+  min-height: 50px; }
 
 .footerGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
 
 .footer__info {
-  margin: 5px 0px 5px 0px; }
+  padding-top: 0.7%;
+  margin: auto; }
+
+.footer__info--term {
+  font-size: 1vw; }
+
+.footer__searchbox {
+  border-radius: 10px;
+  border: none;
+  opacity: 85%;
+  background-color: #6186b8; }
+
+.footer__searchbox::placeholder {
+  color: #ffffff; }
 
 .footer__info--center {
   text-align: center; }
 
+.footer__rrss {
+  display: block; }
+
+.footer__rrss--logo {
+  max-height: 25px; }
+
+/* Background de web*/
 .gradiente {
   display: grid;
   grid-template-columns: 1fr;
@@ -247,6 +126,11 @@ footer {
   background-image: linear-gradient(to bottom, #48bbed, white); }
 
 /* -----bootstrap----- */
+/*carousel*/
+.borderRadius {
+  border-radius: 10px; }
+
+/* Menu, estilos*/
 nav {
   background-color: #48bbed; }
 
@@ -270,25 +154,48 @@ nav {
 .menu2 li a:hover {
   background-color: #ed7a48; }
 
-.subMenu2 {
-  background-color: #ed7a48; }
-
-.subMenu2 li {
-  background-color: #ed7a48; }
-
-.subMenu2 li a {
-  background-color: #ed7a48;
-  color: #161616;
-  font-size: 20px;
-  font-weight: normal; }
-
-.subMenu2 li:hover a {
-  background-color: #eb6529; }
-
 .derecha {
   justify-content: flex-end;
   align-content: center; }
 
+/*Page profesionales*/
+.presentacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center; }
+  .presentacion .imagen__izquierda {
+    max-width: 50%;
+    height: auto;
+    justify-self: flex-end;
+    margin-right: 5%; }
+  .presentacion .imagen__derecha {
+    max-width: 50%;
+    height: auto;
+    justify-self: flex-start;
+    margin-left: 5%; }
+  .presentacion div p {
+    font-size: 20px;
+    margin: auto; }
+  .presentacion .derecho {
+    text-align: end; }
+
+@media (max-width: 320px) {
+  .presentacion {
+    margin-bottom: 200px;
+    display: inline; }
+    .presentacion .imagen__izquierda {
+      max-width: 80%;
+      height: auto;
+      margin: 35px; }
+    .presentacion .imagen__derecha {
+      max-width: 80%;
+      height: auto;
+      margin: 35px; }
+    .presentacion div .derecho {
+      text-align: center; } }
+
+/* Page contactos*/
 .formulario {
   margin: auto;
   width: 1000px;
@@ -298,7 +205,54 @@ nav {
   background-image: linear-gradient(to right, white, #48bbed);
   width: 50%; }
 
+.boton:hover {
+  background-color: #ed7a48;
+  border: none; }
+
+/*maps de contacto*/
+.encuentranos {
+  margin-top: 80px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .encuentranos div {
+    align-self: center;
+    justify-self: flex-end;
+    font-size: medium;
+    margin-right: 30px; }
+  .encuentranos iframe {
+    justify-self: flex-start; }
+
+/* estilos de error404*/
+.background__error {
+  background-color: #48bbed; }
+  .background__error section {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center; }
+    .background__error section a img {
+      width: 300px;
+      height: 220px; }
+    .background__error section h1 {
+      color: #ffffff; }
+    .background__error section p {
+      color: #ffffff; }
+    .background__error section a button {
+      border-radius: 20px;
+      border: none;
+      width: 200px;
+      height: 80px;
+      background-color: #1f5064;
+      font-size: 2rem;
+      color: #ffffff; }
+
+.textAling {
+  text-align: center; }
+
+/* Responsive */
 /* mobile first */
+/* web */
 @media (min-width: 769px) {
   body {
     background-color: #ffffff; } }

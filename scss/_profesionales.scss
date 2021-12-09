@@ -1,16 +1,28 @@
 @import 'variables.scss';
 .presentacion{
     display: grid;
-    grid-template-columns:0.5fr 1fr;
+    grid-template-columns:1fr 1fr;
     justify-content: center;
     align-items: center;
-    .imagen{
-        max-width: 100%;
+    .imagen__izquierda{
+        max-width: 50%;
         height: auto;
-        margin: auto;
+        justify-self: flex-end;
+        margin-right: 5%;
+        
+    }
+    .imagen__derecha{
+        max-width: 50%;
+        height: auto;
+        justify-self: flex-start;
+        margin-left: 5%;
     }
     div p{
-        font-size: 20px
+        font-size: 20px;
+        margin: auto;
+    }
+    .derecho{
+        text-align:end ;
     }
 }
 // media jqueries mobile
@@ -19,12 +31,19 @@
     .presentacion{
         margin-bottom: 200px;
     display:inline;
-    .imagen{
+
+    .imagen__izquierda{
         max-width: 80%;
         height: auto;
         margin: 35px;
     }
-        div{
+    .imagen__derecha{
+        max-width: 80%;
+        height: auto;
+        margin: 35px;
+    }
+
+    div .derecho{
             text-align: center;
         }
     }
