@@ -5,14 +5,14 @@
     justify-content: center;
     align-items: center;
     .imagen__izquierda{
-        max-width: 50%;
+        min-width: 50%;
         height: auto;
         justify-self: flex-end;
         margin-right: 5%;
         
     }
     .imagen__derecha{
-        max-width: 50%;
+        min-width: 50%;
         height: auto;
         justify-self: flex-start;
         margin-left: 5%;

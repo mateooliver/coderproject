@@ -79,15 +79,18 @@
     font-size: 30px;
 }
 .tarjetas{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap-reverse;
         justify-content: space-evenly;
-        
+    
         
         div{
             justify-self:center ;
             text-align: center;
 
+        }
+        .card{
+            margin: 10px 0px 10px 0px;
         }
     }
     
@@ -126,6 +129,13 @@ footer{
 }
 .footer__rrss--logo{
     max-height: 25px ;
+}
+.botonTermino{
+    border-radius: 10px;
+    color: $colorBlanco;
+    margin: auto;
+    padding: 1px 8px 1px 8px;
+    background-color: $colorSearchbox;
 }
 
 /* Background de web*/
@@ -185,26 +195,26 @@ nav {
     background-image:linear-gradient(to right, white, $colorPrincipal);
     width: 50%;
 }
+
 .boton:hover{
     background-color: $colorSecundario;
     border:none;
 }
 /*maps de contacto*/
+.margin-top{
+    margin-top: 50px;
+}
 .encuentranos{
-    margin-top: 80px;
+    width: 85vw;
+    height: auto;
     text-align: center;
-    display: grid;
-    grid-template-columns:1fr 1fr;
+    margin: auto;
     
-
     div{
-        align-self: center;
-        justify-self: flex-end;
         font-size: medium;
         margin-right: 30px;
     }
-    iframe{ justify-self: flex-start;
-    }
+ 
 }
 /* estilos de error404*/
 @import 'error404.scss';
@@ -217,11 +227,12 @@ nav {
       background-color: $colorBlanco; } 
     .maps{
         width: 400px;
-        height:300px;
+        height:300px;}
+        .botonMobiles{
+            display: none;
+        }
     }
     
-    }
-  
   /* tablet */
   @media (max-width: 768px) and (min-width: 321px) {
  body {
@@ -238,14 +249,21 @@ nav {
       display: none;
      }
 
-.container__contacto{
-    margin:auto;
-    max-width: 50%;
-}
 footer {
       margin-top: 200px; } 
+    
+ .botonTermino{
+        font-size: 10px;
+        border-radius: 10px;
+        color: $colorFooter;
+        margin: 5px;
+        background-color: $colorbotonesFooter;
     }
-  
+
+
+    .botonMobiles {
+        display: none;
+    }}
   /* moviles */
 @media (max-width: 320px) {
  body {
@@ -269,18 +287,24 @@ footer {
       height: 70px;
       width: 90px; 
     }
-.container__contacto{
-    display: block;
-    padding: 10%;
-    margin: auto;
-    max-width: 250px;
-}
+
 .maps{
     max-height: 150px;
     max-width: 200px;
 }
 footer {
-      margin-top: 200px; 
+      margin-top: 200px;
+      .botonTermino{
+          display: none;
+      }
+      .botonMobiles {
+          color:$colorFooter;
+          margin:20% 0 0 0;
+          height: auto;
+          font-size: small;
+          display: inline;
+          background-color: $colorbotonesFooter;
+      }
     }
 .footer__info{
       justify-content: space-around;
